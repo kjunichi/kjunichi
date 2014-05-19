@@ -1,5 +1,5 @@
 {
-  "name": "application-name",
+  "name": "kjunichi",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -10,5 +10,16 @@
     "passport": "~0.2.0",
     "passport-twitter": "~1.0.2",
     "hogan.js": "~2.0.0"
+  },
+  "description": "test twitter search client",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@kjunichi",
+  "license": "MIT",
+  "engines":{
+    "node":"0.10.x"
   }
 }
