@@ -32,7 +32,7 @@ var ts = new TwitterStrategy(
     {
         consumerKey: TWITTER_CONSUMER_KEY,
         consumerSecret: TWITTER_CONSUMER_SECRET,
-        callbackURL: "http://twoauthtest.kjunichi.c9.io/auth/twitter/callback"
+        callbackURL: "http://kjunichi.herokuapp.com/auth/twitter/callback"
     },
     function(token, tokenSecret, profile, done) {
         // トークンとトークンシークレットをユーザ情報の中に入れて、API叩く際にこれを参照する。
