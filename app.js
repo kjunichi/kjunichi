@@ -4,7 +4,7 @@ var express = require('express')
 , querystring = require("querystring")
 , TwitterStrategy = require('passport-twitter').Strategy;
  
-var TWITTER_CONSUMER_KEY = "p8WFXZIIXk2hf6WUP7aoUA";
+var TWITTER_CONSUMER_KEY = "WWSNr9U8kYo8mfQO0mmJJPx9R";
 var TWITTER_CONSUMER_SECRET = "cbFPe7YtTWdKhvxtzo6bBWmTosc1BZTpRYgCi73hUZhh5JEtZW";
 
 
