@@ -4,8 +4,8 @@ var express = require('express')
 , querystring = require("querystring")
 , TwitterStrategy = require('passport-twitter').Strategy;
  
-var TWITTER_CONSUMER_KEY = "WWSNr9U8kYo8mfQO0mmJJPx9R";
-var TWITTER_CONSUMER_SECRET = "cbFPe7YtTWdKhvxtzo6bBWmTosc1BZTpRYgCi73hUZhh5JEtZW";
+var TWITTER_CONSUMER_KEY = process.env.TWITTER_CONSUMER_KEY;
+var TWITTER_CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET;
 
 
 // Passport session setup.
