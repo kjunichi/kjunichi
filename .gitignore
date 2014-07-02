@@ -1,1 +1,3 @@
 setupEnv.sh
+node_modules
+secret.json

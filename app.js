@@ -4,8 +4,8 @@ var express = require('express')
 , querystring = require("querystring")
 , TwitterStrategy = require('passport-twitter').Strategy;
  
-var TWITTER_CONSUMER_KEY = process.env.TWITTER_CONSUMER_KEY;
-var TWITTER_CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET;
+var TWITTER_CONSUMER_KEY = process.env.TWITTER_CONSUMER_KEY||(require("./secret.json")).TWITTER_CONSUMER_KEY;
+var TWITTER_CONSUMER_SECRET = process.env.TWITTER_CONSUMER_SECRET||(require("./secret.json")).TWITTER_CONSUMER_SECRET;
 
 
 // Passport session setup.
@@ -32,7 +32,7 @@ var ts = new TwitterStrategy(
     {
         consumerKey: TWITTER_CONSUMER_KEY,
         consumerSecret: TWITTER_CONSUMER_SECRET,
-        callbackURL: "http://kjunichi.herokuapp.com/auth/twitter/callback"
+        callbackURL: process.env.TWITTER_OAUTH_CALLBACK_URL||(require("./secret.json")).TWITTER_OAUTH_CALLBACK_URL
     },
     function(token, tokenSecret, profile, done) {
         // トークンとトークンシークレットをユーザ情報の中に入れて、API叩く際にこれを参照する。

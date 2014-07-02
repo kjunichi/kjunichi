@@ -1,0 +1,2 @@
+{"ts":1362969868049,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
+{"contributors":[],"silentsave":false,"ts":1362969870336,"patch":[[{"diffs":[[1,"<p>ID: <%= user.id %></p>\n<p>Username: <%= user.username %></p>"]],"start1":0,"start2":0,"length1":0,"length2":63}]],"length":63,"saved":false}
